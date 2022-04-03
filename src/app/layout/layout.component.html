@@ -12,7 +12,9 @@
 </div>
 <div class="tx" [style.width]="(isClose)?'0px':'280px'"
     style="overflow:hidden;position:absolute;height:100vh;border-right: 1px solid #dedede;top:0px;z-index:1">
-    <img style="height: 80px;margin-left:16px;" class="mt-2" [src]="imgSrc" />
+    <div style="height: 80px;">
+        <img style="height: 80px;margin-left:16px;" class="mt-2" [src]="imgSrc" />
+    </div>
     <div class="p-2"></div>
     <ng-material-multilevel-menu [configuration]='config' [items]='appitems' (selectedItem)="selectedItem($event)">
     </ng-material-multilevel-menu>
