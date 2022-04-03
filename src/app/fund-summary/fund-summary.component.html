@@ -1,0 +1,78 @@
+<app-layout>
+
+    <div class="container topContainner">
+        <div class="row mt-2">
+            <div class="col-12">
+                <div>Asia Alternatives Summary <div style="float: right;">
+                        <select>
+                            <option>USD</option>
+                        </select>
+                        <select class="ml-2">
+                            <option>Q1 2021</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-7">
+                <div>
+                    <h3>Value Creation Q1 2021</h3>
+                    <google-chart #chart [title]="title" [type]="chartType" [data]="data" [columns]="itemNames"
+                        [options]="options" [width]="width" [height]="height">
+                    </google-chart>
+                </div>
+            </div>
+            <div class="col-5" style="min-height: 100%">
+                <div class="h-100">
+                    <h3>Aggregated overview</h3>
+                    <table class="tbData">
+                        <tr>
+                            <th>USD</th>
+                            <th>2020-12-31
+                            </th>
+                            <th>2010-03-31
+                            </th>
+                            <th>QoQ</th>
+                        </tr>
+                        <tr *ngFor="let aItem of aFund.AggItems;let i = index">
+                            <td class="aleft">{{aItem}}</td>
+                            <td [style.color]="i2==2?(aValue==0?'':(aValue>0?'green':'red')):'#333'"
+                                *ngFor="let aValue of aFund.Agg[i];let i2 = index">{{aValue==0?'-':'$'}}{{(aValue==0?'':
+                                transformValue(aValue) )| number:'1.2'}}{{aValue==0?'':'M'}} </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <div>
+                    <h3>Asia Alternatives Performance by fund</h3>
+                    <table class="tbData">
+                        <tr>
+                            <th>Fund</th>
+                            <th>Invester Entity
+                            </th>
+                            <th>Commitment
+                            </th>
+                            <th>Realized</th>
+                            <th>Remaining fair value</th>
+                            <th>Gross MoC</th>
+                            <th>Net IRR</th>
+                        </tr>
+                        <tr><td colspan="10">&nbsp;</td></tr>
+                        <tr><td colspan="10">&nbsp;</td></tr>
+                        <tr><td colspan="10">&nbsp;</td></tr>
+                        <tr><td colspan="10">&nbsp;</td></tr>
+                        <tr class="tbFooter"><td colspan="10" style="text-align: left;">&nbsp;&nbsp;&nbsp; Total &nbsp;</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12">
+                
+            </div>
+        </div>
+    </div>
+
+</app-layout>

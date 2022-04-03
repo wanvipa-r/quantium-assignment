@@ -1,0 +1,19 @@
+<div class="tx" [style.left]="isClose?'0px':'280px'"
+    style="height:70px;position:absolute;top:0px;right:0px;border-bottom:solid 1px #dedede;z-index:2">
+    <div class="p-3 " (click)="toggle()">
+        <mat-icon aria-hidden="false" style="font-size:32px;cursor: pointer;" aria-label="menu icon">menu</mat-icon>
+    </div>
+</div>
+<div class="tx" [style.left]="isClose?'0px':'280px'"
+    style="position: absolute;right:0px;top:70px;bottom:0px;z-index:99;left:280px">
+    <div style="width:100%;position:relative">
+        <ng-content></ng-content>
+    </div>
+</div>
+<div class="tx" [style.width]="(isClose)?'0px':'280px'"
+    style="overflow:hidden;position:absolute;height:100vh;border-right: 1px solid #dedede;top:0px;z-index:1">
+    <img style="width:80px;height: 80px;margin-left:16px;" class="mt-2" [src]="imgSrc" />
+    <div class="p-2"></div>
+    <ng-material-multilevel-menu [configuration]='config' [items]='appitems' (selectedItem)="selectedItem($event)">
+    </ng-material-multilevel-menu>
+    <div>

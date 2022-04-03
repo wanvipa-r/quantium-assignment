@@ -1,0 +1,25 @@
+<div class="header">&nbsp;</div>
+<div class="sub-header d-flex justify-content-center pd-5">Welcome to Asia Alternatives to Quantium Investor Portal
+</div>
+<div class="content mt-5 d-flex flex-column justify-content-center ">
+    <div *ngFor="let aFund of fundDatas" class="fund-box mt-3 p-3" style="width:600px;align-self: center;" (click)="nav(aFund.Id)">
+        <div class="row">
+            <div class="col-sm-4 d-flex justify-content-end"><img [src]="aFund.Logo" width="120" /></div>
+            <div class="col-sm-8">
+                <div class="content-header row">{{aFund.Name}}</div>
+
+                <div *ngFor="let aReport  of aFund.PerfReports" class="mt-2 row" (click)="navDetail(aFund.Id,aReport.Id)">
+                    <div class="col-4">
+                        <span [className]="'label-status p-1 s_'+aReport.Status.toLowerCase()">{{aReport.Status}}</span>
+
+                    </div>
+                    <div class="col-8">
+                        <span class="ml-3 mt-1 d-block">{{aReport.Name}}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
