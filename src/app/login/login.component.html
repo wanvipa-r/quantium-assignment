@@ -1,0 +1,43 @@
+<div class="content">
+
+    <div class="logo">
+        <img src="../assets/ggv-logo.png" width="120" />
+    </div>
+    <div class="login-panel">
+        <div class="row mt-4">
+            <div class="col-3"> </div>
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <input #userBox class="ml-1 mr-1" type="text" placeholder="Email" (keydown.enter)="login(userBox.value,passBox.value)" />
+                </div>
+                <div class="d-flex flex-column mt-5">
+                    <input #passBox type="password" placeholder="Password" (keydown.enter)="login(userBox.value,passBox.value)"/>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">&nbsp;</div>
+        </div>
+        <div class="row mt-4">
+
+            <div class="col-3"> </div>
+            <div class="col-6">
+
+                <div class="row ">
+                    <div class="col-6"><a href="#">FORGOT PASSWORD?</a></div>
+                    <div class="col-6 d-flex justify-content-end"><button (click)="login(userBox.value,passBox.value)">LOGIN</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <span class="text-secondary">Powered by </span>
+            <img src="../assets/quantium-logo.png" height="60" />
+        </div>
+        <div class="col-12 col-md-6" style="text-align: right;"><span class="text-secondary"><a href="#">Contact Us</a> | <a href="#">Terms of Use</a>
+             | <a href="#">Privacy Policy</a></span></div>
+    </div>
+</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
