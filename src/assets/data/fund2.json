@@ -1,0 +1,27 @@
+{
+    "Id":1,
+    "Name":"GGV Capital limited",
+    "Logo":"/assets/seq-logo.png",
+    "AggItems":["Commitment","Contribution","Distribution","NAV"],
+    "Agg":[[8591,8590.25,-0.75],[1643.66,1643.16,-0.52],[115,115,0],[1992.44,1997.40,4.96]],
+    "PerfReports":
+    [
+        {
+            "Id":"R2001",
+            "Name":"USD Fund VI (First closing)",
+            "Status":"Fund raising",
+            "G_Con":20,
+            "G_Dis":10,
+            "G_NAV_M":10,
+            "G_NAV":50,
+            "G_TOT":60
+        }
+    ],
+    "Highlights":
+    [
+       { "Name" :  "Alibaba"},
+       { "Name" :  "Taikang Insurance"},
+       { "Name" :  "GME Assets"}
+    ]
+
+}

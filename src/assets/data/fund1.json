@@ -1,0 +1,38 @@
+{
+    "Id":1,
+    "Name":"GGV Capital limited",
+    "Logo":"/assets/ggv-logo.png",
+    "AggItems":["Commitment","Contribution","Distribution","NAV"],
+    "Agg":[[8591,8590.25,-0.75],[1643.66,1643.16,-0.52],[115,115,0],[1992.44,1997.40,4.96]],
+    "PerfReports":
+    [
+        {
+            "Id":"R1001",
+            "Name":"USD Fund V (Q1 2021)",
+            "Status":"Reporting",
+            "G_Con":20,
+            "G_Dis":10,
+            "G_NAV_M":10,
+            "G_NAV":50,
+            "G_TOT":60,
+            "Allocation":[{"Name":"Energy","Val":1},{"Name":"Insurance","Val":1},{"Name":"Material","Val":1}]
+        },
+        { 
+            "Id":"R1002",
+            "Name":"USD Fund VI (Q1 2021)",
+            "Status":"Reporting",
+            "G_Con":20,
+            "G_Dis":0,
+            "G_NAV":25,
+            "G_TOT":25,
+            "Allocation":[{"Name":"Energy","Val":2},{"Name":"Material","Val":1}]
+        }
+    ],
+    "Highlights":
+    [
+       { "Name" :  "Alibaba"},
+       { "Name" :  "Taikang Insurance"},
+       { "Name" :  "GME Assets"}
+    ]
+
+}
