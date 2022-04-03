@@ -1,0 +1,38 @@
+.topContainner>.row>div>div{
+    border: solid 1px #dedede;
+    border-radius: 6px;
+    padding: 5px;
+}
+.topContainner>.row>div{
+    padding:2px !important ;
+    overflow: hidden;
+}
+select{
+    border: solid 1px #dedede;
+}
+.tbData
+{
+    width: 100%;
+}
+.tbData th{
+    background-color: #07077c;
+    color: white;
+    padding: 5px;
+}
+.tbData> tr>*{
+    text-align: center;
+}
+.tbData> tr>.aleft{
+    text-align: left;
+}
+.tbData> tr{
+    border-bottom: solid 1px #ddd;
+}
+.tbData td{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.tbData> tr.tbFooter{
+    background-color: #07077c44;
+}

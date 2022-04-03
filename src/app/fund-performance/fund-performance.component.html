@@ -1,0 +1,36 @@
+<app-layout>
+    <div class="container topContainner">
+        <div class="row mt-2">
+            <div class="col-12">
+                <div>Asia Alternatives Summary <div style="float: right;">
+                        <select>
+                          
+                        </select>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-5">
+                <div>
+                    <h3>Deal allocation [number of assets]</h3>
+                    <google-chart #pieChart [title]="o1.title" [type]="o1.chartType" [data]="o1data" 
+                    [columns]="o1.itemNames"
+                    [options]="o1.options" [width]="o1.width" [height]="o1.height">
+                    </google-chart>
+                </div>
+            </div>
+            <div class="col-7" style="min-height: 100%">
+                <div class="h-100">
+                    <h3>Investments by quarter</h3>
+                    <google-chart #lineChart [title]="o2.title" [type]="o2.chartType" [data]="o2data" 
+                    [columns]="o2.itemNames"
+                    [options]="o2.options" [width]="o2.width" [height]="o2.height">
+                    </google-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</app-layout>
